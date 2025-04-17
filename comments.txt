@@ -1,0 +1,42 @@
+Before you go through these, check whether your browser zoom is set to 100%.  
+I'm saying this because most of the texts look small on my screen. If it’s not, set it to 100% and then go through these.
+
+1. The images folder wasn’t pushed to GitHub. I think it got lost or something.  
+Create the `images` folder, put all the images inside, and push it. After that, fix the image imports in your code since the paths will change once the images are moved into the folder.
+
+2. In the CSS, I see you're trying to use the `1rem = 10px` approach, which is nice.  
+But you set it like this:  
+html {
+  font-size: 0.625rem;
+}  
+Best practice is to use:  
+html {
+  font-size: 62.5%;
+}  
+The first one might give you issues with rem calculations, so it's better to go with the percentage.
+
+3. The navbar looks good, but the "Order Now" button needs a bit of improvement.  
+Add some padding and a thin border to make it stand out more.  
+Try something like:  
+padding: 1.2rem 2.4rem;  
+border-radius: 18px;  
+border: 1px solid hsl(212, 27%, 19%);  
+Also, it's better to use `px` instead of `rem` for `border-radius`.
+
+4. The hero content text looks small. Hero headings are usually the biggest on the page.  
+Set the `h1` font size to `9.6rem`.  
+Right now, the `width` is 100%, which makes it stretch too far. Change it to `50%` to center it better.  
+Also, the line-height is too much by default (around 1.5), so reduce it to `0.95` to tighten up the spacing.  
+The subtext (the paragraph) is also small — `2rem` works better.  
+Add some space between the paragraph and the heading with `margin-bottom: 3rem`.
+
+5. The call-to-action buttons on the hero section are also small.  
+Increase the font size to `2rem` or `1.8rem` and add more padding.  
+Also, increase the spacing between the buttons and the hero paragraph.
+
+6. The testimonial texts are very small and hard to read.  
+Increase the size of the `h3`, the testimonial paragraph, the name, and the location.  
+Also, increase the spacing between the `h3` and the paragraph.  
+The spacing between the name/location and the testimonial text should be more than the spacing between the `h3` and the paragraph.
+
+7. We'll fix the footer later, so just leave it for now.
