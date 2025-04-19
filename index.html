@@ -16,7 +16,7 @@
     <header class="header">
       <p class="logo">Hunky Dory</p>
       <nav class="main-navigation">
-        <ul class="main-nav-list">
+        <ul class="main-nav-list" id="nav-list">
           <li><a class="main-nav-link" href="#">Menu</a></li>
           <li><a class="main-nav-link" href="#">Testimonial</a></li>
           <li><a class="main-nav-link" href="#">About</a></li>
@@ -27,7 +27,7 @@
 
     <main>
       <section class="section-hero">
-        <img src="image 110.png" alt="Hero image" />
+        <img src="Image/image 110.png" alt="Hero image" />
 
         <div class="hero-content">
           <h1>Best food for your taste</h1>
@@ -39,6 +39,40 @@
             <a href="#" class="btn order-btn">Order Now</a>
             <a href="#" class="btn explore-btn">Explore Menu</a>
           </div>
+        </div>
+      </section>
+
+      <section class="section-menu">
+        <h1>Our Menu</h1>
+        <div class="menu-item-one">
+          <img src="Image/Small.jpg" alt="small plain rice" />
+          <h3>Small Plain Rice</h3>
+          <p>
+            Perfect individual portion of our signature plain rice with pieces
+            of sausauges and an omelette.
+          </p>
+          <span>Amount</span>
+          <button>Order Now</button>
+        </div>
+        <div class="menu-item-two">
+          <img src="Image/medium.jpg" alt="medium plain rice" />
+          <h3>Medium Plain Rice</h3>
+          <p>
+            Family-sized portion with two pieces of sardine,plantain and our
+            special sauce.
+          </p>
+          <span>Amount</span>
+          <button>Order Now</button>
+        </div>
+        <div class="menu-item-three">
+          <img src="Image/large.jpg" alt="large plain rice" />
+          <h3>Large Plain Rice</h3>
+          <p>
+            Party-sized plain rice with sausages, a chunk of beef, plantains and
+            pieces of sardine.
+          </p>
+          <span>Amount</span>
+          <button>Order Now</button>
         </div>
       </section>
 
@@ -54,7 +88,7 @@
           </p>
           <div class="testimonial-one-img">
             <img
-              src="uifaces-popular-image (2).jpg"
+              src="Image/uifaces-popular-image (2).jpg"
               alt="Amina Roberts image"
             />
             <div class="testimonial-text">
@@ -73,7 +107,7 @@
           </p>
           <div class="testimonial-two-img">
             <img
-              src="uifaces-popular-image (1).jpg"
+              src="Image/uifaces-popular-image (1).jpg"
               alt="Michael Bennett image"
             />
             <div class="testimonial-text">
@@ -92,7 +126,7 @@
           </p>
           <div class="testimonial-three-img">
             <img
-              src="uifaces-popular-image.jpg"
+              src="/Image/uifaces-popular-image.jpg"
               alt="Darius Thompson image"
             />
             <div class="testimonial-text">
@@ -100,6 +134,45 @@
               <span class="testimonial-location">San Francisco, CA</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="Order-placement">
+        <div class="form-wrapper">
+          <h1>Place Your Order</h1>
+          <form>
+            <!-- Choose Portion Size -->
+            <label for="portion">Choose Portion Size:</label>
+            <select id="portion" name="portion">
+              <option selected disabled>Select Portion Size</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+
+            <!-- Full Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" />
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <!-- Delivery Address -->
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+
+            <!-- Payment Method -->
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+              <option selected disabled>Select Payment Method</option>
+              <option value="mobile-money">Mobile Money</option>
+              <option value="credit-card">Credit Card</option>
+            </select>
+
+            <!-- Confirm Button -->
+            <button type="submit" class="confirm-btn">Confirm Order</button>
+          </form>
         </div>
       </section>
     </main>
@@ -114,24 +187,24 @@
 
         <div class="social-media-container">
           <a href="https://www.twitter.com" target="_blank" class="social-icon">
-            <img src="icon-twitter.svg" alt="Twitter Logo" />
+            <img src="/Image/icon-twitter.svg" alt="Twitter Logo" />
           </a>
           <a
             href="https://www.facebook.com"
             target="_blank"
             class="social-icon"
           >
-            <img src="icon-facebook.svg" alt="Facebook Logo" />
+            <img src="/Image/icon-facebook.svg" alt="Facebook Logo" />
           </a>
           <a
             href="https://www.instagram.com"
             target="_blank"
             class="social-icon"
           >
-            <img src="icon-instagram.svg" alt="Instagram Logo" />
+            <img src="/Image/icon-instagram.svg" alt="Instagram Logo" />
           </a>
           <a href="https://www.github.com" target="_blank" class="social-icon">
-            <img src="github-brands.svg" alt="GitHub Logo" />
+            <img src="/Image/github-brands.svg" alt="GitHub Logo" />
           </a>
         </div>
       </div>
@@ -166,12 +239,12 @@
       <div class="sample-foods-container">
         <p>Follow Us On Instagram</p>
         <div class="sample-foods">
-          <img src="pexels-steve-3789885 1.png" alt="Mac and cheese" />
+          <img src="Image/pexels-steve-3789885 1.png" alt="Mac and cheese" />
           <img
-            src="sadj-iron-pot-with-various-salads 1.png"
+            src="Image/sadj-iron-pot-with-various-salads 1.png"
             alt="Salads"
           />
-          <img src="pexels-ash-376464 1.png" alt="waffle" />
+          <img src="Image/pexels-ash-376464 1.png" alt="waffle" />
         </div>
       </div>
 
