@@ -1,0 +1,209 @@
+
+Alright so starting with the hero section —
+
+When you're building landing pages, it's always a good practice to make the hero section and the nav sit together as one big header block that takes up 100vh. Right now it's scrollable and doesn't feel like a proper hero. Let’s fix that.
+
+First, wrap the nav and hero section inside a `<header>` tag. A lot of people think the `<header>` tag is just for the nav, but it actually represents the "head" section of the page. So I like to put both the nav and hero inside for a better experience.
+
+Move the hero section from the main into the header so it looks like this:
+
+```
+<header class="header">
+  <nav class="main-navigation">
+    <p class="logo">Hunky Dory</p>
+    <ul class="main-nav-list" id="nav-list">
+      <li><a class="main-nav-link" href="#">Menu</a></li>
+      <li><a class="main-nav-link" href="#">Testimonial</a></li>
+      <li><a class="main-nav-link" href="#">About</a></li>
+      <li><a class="button-link" href="#">Order Now</a></li>
+    </ul>
+  </nav>
+
+  <section class="section-hero">
+    <img src="Image/image 110.png" alt="Hero image" />
+
+    <div class="hero-content">
+      <h1>Best food for your taste</h1>
+      <p>
+        Discover delectable cuisine and unforgettable moments in our
+        welcoming culinary haven
+      </p>
+      <div class="button-group">
+        <a href="#" class="btn order-btn">Order Now</a>
+        <a href="#" class="btn explore-btn">Explore Menu</a>
+      </div>
+    </div>
+  </section>
+</header>
+```
+
+Now onto the navigation bar:
+
+- Add `background-color: rgba(255, 255, 255, 0.95);` to the nav. It's a subtle off-white that blends well.
+- Flex is already set, so just add:
+  - `justify-content: space-between;`
+  - `align-items: center;`
+  - `padding: 2rem;`
+  - `height: 8rem;`
+
+Also, scale up the nav link text size from `1.5rem` to `1.8rem`.
+
+The logo currently looks weird, so use the image logo instead of the text. There's a file called `cover.png` inside the `hunky-dory-logo` folder, use that like this:
+```
+
+      <nav class="main-navigation">
+          <img
+            class="logo"
+            src="hunky dory-logo/cover.png"
+            alt="Hunky Dory Logo"
+          />
+        <ul class="main-nav-list" id="nav-list">
+          <li><a class="main-nav-link" href="#">Menu</a></li>
+          <li><a class="main-nav-link" href="#">Testimonial</a></li>
+          <li><a class="main-nav-link" href="#">About</a></li>
+          <li><a class="button-link" href="#">Order Now</a></li>
+        </ul>
+      </nav>
+```
+
+Then style it:
+
+```
+.logo {
+  height: 8rem;
+}
+```
+
+Remove any previous text-based logo styles.
+
+About the nav link colors — pure black on white is a bit harsh on the eyes. Change the color to `#333` instead of `black` or `hsl(0, 0%, 0%)`.
+
+```
+.main-nav-link,
+.button-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+```
+
+And update `.button-link`:
+
+```
+.button-link {
+  background-color: white;
+  color: #333;
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+```
+
+Next, the hero image and text. Instead of using an `<img>` tag inside the hero section, use a background image. Remove the `<img>` and update the CSS:
+
+```
+<section class="section-hero">
+
+        <div class="hero-content">
+          <h1>Best food for your taste.</h1>
+          <p>
+            Discover delectable cuisine and unforgettable moments in our
+            welcoming culinary haven.
+          </p>
+          <div class="button-group">
+            <!-- <a href="#" class="btn order-btn">Order Now</a> -->
+            <a href="#" class="btn explore-btn">Explore Menu</a>
+          </div>
+        </div>
+</section>
+
+```
+
+
+```
+.section-hero {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('Image/image 110.png');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+```
+
+That creates a cleaner banner feel.
+
+Update `.hero-content` to be centered and white for contrast:
+
+```
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  width: 50%;
+  max-width: 90%;
+  line-height: 0.95;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+```
+
+Also give the paragraph more breathing space:
+
+```
+.hero-content p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+```
+
+Since there's already an "Order Now" button in the nav, let's comment out the one in the hero:
+
+```
+<div class="button-group">
+  <!-- <a href="#" class="btn order-btn">Order Now</a> -->
+  <a href="#" class="btn explore-btn">Explore Menu</a>
+</div>
+```
+
+Now style `.explore-btn` using the brand gradient:
+
+```
+.explore-btn {
+  background-image: linear-gradient(to right, #feca15, #fc6c00);
+  color: #fff;
+  /* border: 2px solid #000000; */
+}
+```
+
+Do the same gradient for the nav button link too.
+
+Lastly, the background image isn't that great. I found a better one from Unsplash of people eating together. Replace the image path with this:
+
+```
+.section-hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+     url('Image/alex-haney-CAhjZmVk5H4-unsplash.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+```
+
+I’d continue but I’m too tired today 😪. Honestly, people who write documentation suffer 😂. We’ll finish up the other sections tomorrow.
+
+Bye 👋 Let me know how the hero looks now!

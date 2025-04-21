@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: KomikaTitle-Kaps
+font link: https://www.fontsquirrel.com/fonts/komika-title
+font author: Fredrick Nader
+font author site: http://pedroreina.net/apostrophiclab/
+
+
+{"bg":"#FDF7EC","icon-gradient-0":"#E56500","icon-gradient-1":"#EBC51D","font":"#342103","slogan":"#483517"}
+      
