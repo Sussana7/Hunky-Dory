@@ -21,22 +21,23 @@ body {
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   background-color: #e7e4e2;
-  height: 9rem;
-  padding: 0 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-  font-size: 3rem;
-  white-space: nowrap;
 }
 
 /* NAVIGATION */
 .main-navigation {
+  background-color: rgba(255, 255, 255, 0.95);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 8rem;
+}
+
+.logo {
+  height: 8rem;
 }
 
 .main-nav-list {
@@ -48,47 +49,35 @@ body {
 
 .main-nav-link,
 .button-link {
-  color: hsl(0, 0%, 0%);
+  color: #333;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
 .button-link {
+  background-image: linear-gradient(to right, #feca15, #fc6c00);
   background-color: white;
-  color: hsl(212, 27%, 19%);
+  color: #333;
   padding: 1.2rem 2.4rem;
-  border-radius: 18px;
-  border: 1px solid hsl(212, 27%, 19%);
-  font-weight: bold;
+  border-radius: 25px;
   cursor: pointer;
-}
-
-/* RESPONSIVE MENU */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .main-navigation {
-    width: 100%;
-  }
 }
 
 /* ****************** */
 /* SECTION HERO */
 .section-hero {
-  position: relative;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("Image/alex-haney-CAhjZmVk5H4-unsplash.jpg");
   width: 100%;
-  height: auto; /* This allows it to grow based on the content */
-  overflow: hidden;
-}
-
-.section-hero img {
-  width: 100%;
-  height: auto; /* so that it shrinks on mobile */
-  object-fit: cover;
-  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .hero-content {
@@ -97,11 +86,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: hsl(212, 27%, 19%);
+  color: #fff;
   padding: 1rem;
   width: 50%;
   max-width: 90%;
   line-height: 0.95;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-content h1 {
@@ -111,6 +101,7 @@ body {
 
 .hero-content p {
   font-size: 2rem;
+  line-height: 1.5;
   margin-bottom: 3rem;
 }
 
@@ -135,57 +126,51 @@ body {
 
 .order-btn {
   background-color: #722f37;
-  color: white;
+  color: #fff;
   padding: 1.2rem 2.4rem;
   border-radius: 18px;
   border: 1px solid hsl(212, 27%, 19%);
 }
 
 .explore-btn {
-  background-color: white;
-  color: #333;
-  border: 2px solid #000000;
+  background-image: linear-gradient(to right, #feca15, #fc6c00);
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  /* border: 2px solid #000000; */
 }
 
 /* ****************** */
 /* MEDIA QUERY FOR HEADER AND SECTION HERO */
 
 @media (max-width: 768px) {
-  .header {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .main-navigation {
+    flex-direction: column;
     height: auto;
     padding: 1rem 2rem;
   }
 
-  .logo {
-    font-size: 2rem;
-  }
-
   .main-nav-list {
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
   }
 
   .main-nav-link,
   .button-link {
     font-size: 1rem;
-    padding: 0.4rem 1rem;
+    padding: 0.6rem 1.2rem;
   }
 
   .hero-content {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90%;
     padding: 0.5rem;
   }
 
   .hero-content h1 {
     font-size: 2.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .hero-content p {
@@ -196,12 +181,6 @@ body {
   .btn {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
-  }
-
-  .section-hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 }
 
