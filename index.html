@@ -22,7 +22,11 @@
         />
         <ul class="main-nav-list" id="nav-list">
           <li><a class="main-nav-link" href="#section-menu">Menu</a></li>
-          <li><a class="main-nav-link" href="#section-testimonials">Testimonial</a></li>
+          <li>
+            <a class="main-nav-link" href="#section-testimonials"
+              >Testimonial</a
+            >
+          </li>
           <li><a class="main-nav-link" href="#">About</a></li>
           <li><a class="button-link" href="#Order-placement">Order Now</a></li>
         </ul>
@@ -83,69 +87,98 @@
       <section class="section-testimonials" id="section-testimonials">
         <h1>What Our Customers Say</h1>
 
-        <div class="testimonial-one">
-          <h3>"The best restaurant"</h3>
-          <p>
-            Last night, we dined at place and were simply blown away. From the
-            moment we stepped in, we were enveloped in an inviting atmosphere
-            and greeted with warm smiles.
-          </p>
-          <div class="testimonial-one-img">
-            <img
-              src="Image/uifaces-popular-image (2).jpg"
-              alt="Amina Roberts image"
-            />
-            <div class="testimonial-text">
-              <span class="testimonial-name">Amina Roberts</span>
-              <span class="testimonial-location">Los Angeles, CA</span>
+        <!-- <section class="container"> -->
+          <div class="testimonial-one">
+            <h3>"The best restaurant"</h3>
+            <p>
+              Last night, we dined at place and were simply blown away. From the
+              moment we stepped in, we were enveloped in an inviting atmosphere
+              and greeted with warm smiles.
+            </p>
+            <div class="testimonial-one-img">
+              <img
+                src="Image/uifaces-popular-image (2).jpg"
+                alt="Amina Roberts image"
+              />
+              <div class="testimonial-text">
+                <span class="testimonial-name">Amina Roberts</span>
+                <span class="testimonial-location">Los Angeles, CA</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-two">
-          <h3>"Simply delicious"</h3>
-          <p>
-            Place exceeded my expectations on all fronts. The ambiance was cozy
-            and relaxed, making it a perfect venue for our anniversary dinner.
-            Each dish was prepared and beautifully presented.
-          </p>
-          <div class="testimonial-two-img">
-            <img
-              src="Image/uifaces-popular-image (1).jpg"
-              alt="Michael Bennett image"
-            />
-            <div class="testimonial-text">
-              <span class="testimonial-name">Michael Bennett</span>
-              <span class="testimonial-location">San Diego, CA</span>
+          <div class="testimonial-two">
+            <h3>"Simply delicious"</h3>
+            <p>
+              Place exceeded my expectations on all fronts. The ambiance was
+              cozy and relaxed, making it a perfect venue for our anniversary
+              dinner. Each dish was prepared and beautifully presented.
+            </p>
+            <div class="testimonial-two-img">
+              <img
+                src="Image/uifaces-popular-image (1).jpg"
+                alt="Michael Bennett image"
+              />
+              <div class="testimonial-text">
+                <span class="testimonial-name">Michael Bennett</span>
+                <span class="testimonial-location">San Diego, CA</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-three">
-          <h3>"One of a kind restaurant"</h3>
-          <p>
-            The culinary experience at place is first to none. The atmosphere is
-            vibrant, the food – nothing short of extraordinary. The food was the
-            highlight of our evening. Highly recommended.
-          </p>
-          <div class="testimonial-three-img">
-            <img
-              src="/Image/uifaces-popular-image.jpg"
-              alt="Darius Thompson image"
-            />
-            <div class="testimonial-text">
-              <span class="testimonial-name">Darius Thompson</span>
-              <span class="testimonial-location">San Francisco, CA</span>
+          <div class="testimonial-three">
+            <h3>"One of a kind restaurant"</h3>
+            <p>
+              The culinary experience at place is first to none. The atmosphere
+              is vibrant, the food – nothing short of extraordinary. The food
+              was the highlight of our evening. Highly recommended.
+            </p>
+            <div class="testimonial-three-img">
+              <img
+                src="/Image/uifaces-popular-image.jpg"
+                alt="Darius Thompson image"
+              />
+              <div class="testimonial-text">
+                <span class="testimonial-name">Darius Thompson</span>
+                <span class="testimonial-location">San Francisco, CA</span>
+              </div>
             </div>
           </div>
-        </div>
+        <!-- </section> -->
       </section>
 
       <section class="Order-placement" id="Order-placement">
-        <div class="form-wrapper">
+        <form action="">
+          <div>
+            <label for="">Choose portion size:</label>
+            <select required>
+              <option value="">Small</option>
+              <option value="">Medium</option>
+              <option value="">Large</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="">Enter your name:</label>
+            <input type="text" required />
+          </div>
+
+          <div>
+            <label for="">Enter your phone number:</label>
+            <input type="text" required />
+          </div>
+
+          <div>
+            <label for="">Enter your delivery address:</label>
+            <input type="text" required />
+          </div>
+
+          <button class="button-link">Order Now</button>
+        </form>
+
+        <!-- <div class="form-wrapper">
           <h1>Place Your Order</h1>
           <form>
-            <!-- Choose Portion Size -->
             <label for="portion">Choose Portion Size:</label>
             <select id="portion" name="portion">
               <option selected disabled>Select Portion Size</option>
@@ -154,19 +187,15 @@
               <option value="large">Large</option>
             </select>
 
-            <!-- Full Name -->
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" />
 
-            <!-- Phone Number -->
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" />
 
-            <!-- Delivery Address -->
             <label for="address">Delivery Address:</label>
             <textarea id="address" name="address" rows="3"></textarea>
 
-            <!-- Payment Method -->
             <label for="payment">Payment Method:</label>
             <select id="payment" name="payment">
               <option selected disabled>Select Payment Method</option>
@@ -174,10 +203,9 @@
               <option value="credit-card">Credit Card</option>
             </select>
 
-            <!-- Confirm Button -->
             <button type="submit" class="confirm-btn">Confirm Order</button>
           </form>
-        </div>
+        </div> -->
       </section>
     </main>
 
