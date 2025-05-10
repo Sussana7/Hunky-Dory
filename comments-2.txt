@@ -207,3 +207,73 @@ Lastly, the background image isn't that great. I found a better one from Unsplas
 I’d continue but I’m too tired today 😪. Honestly, people who write documentation suffer 😂. We’ll finish up the other sections tomorrow.
 
 Bye 👋 Let me know how the hero looks now!
+
+
+
+Moving on the menu section
+
+First let's change the background color of the menu .
+
+So comment out the background color . 
+Updated CSS now is 
+
+.section-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  font-weight: 600;
+  /* background-color: #e7e4e2; */
+}
+
+On larger screens like monnitor screens or bigger TV screens , some of the content 
+stretch very wide and the design starts to look messy.
+I will teach you how to check that later.
+
+To avoid that we wrap the content in a container with a fix width so that the content 
+doesn't overgrow its container non matter how large the screen is 
+
+Scroll to the topmost part of the CSS, We are putting at  the top so that when 
+we want to modify it will be easy .
+
+Add this CSS class under the body styles.
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+Wrap all the menu cards(only the cards in exception of the headings)
+
+Now the items will look stack on top of each other because the grid styles that were
+given to these cards are no more applying.
+
+in the container div you used to wrap the cards, add another class and name it menu-items.
+
+because this is a simple 1D layout , let's use flex so we dont have to write lot of css.
+
+In the section menu styles 
+comment out the grid styles . 
+Updated CSS looks like this
+
+.section-menu {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 2rem; */
+  padding: 2rem;
+  font-weight: 600;
+  margin-top: 4.8rem;
+  /* background-color: #e7e4e2; */
+}
+
+
+
+the menu items styles should be right under the section menu 
+and using flex like this 
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}

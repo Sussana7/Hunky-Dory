@@ -9,10 +9,17 @@ html {
 }
 
 body {
-  font-family: "Inter";
+  font-family: 'Inter',sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
+}
+.container {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* border: 1px solid red; */
 }
 
 /****** HEADER ******/
@@ -208,12 +215,19 @@ body {
 /* ****************** */
 /* SECTION MENU */
 .section-menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 2rem; */
   padding: 2rem;
   font-weight: 600;
-  background-color: #e7e4e2;
+  margin-top: 4.8rem;
+  /* background-color: #e7e4e2; */
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 .section-menu h1 {
@@ -221,7 +235,8 @@ body {
   grid-column: span 3;
   text-align: center;
   margin-top: 1rem;
-  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  color: #333;
 }
 
 .menu-item-one,
@@ -236,11 +251,11 @@ body {
 
 .section-menu img {
   width: 100%;
-  max-width: 400px;
-  height: 200px;
-  object-fit: cover;
+  /* max-width: 400px; */
+  height: 30rem;
+  /* object-fit: cover; */
   border-radius: 8px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .section-menu h3 {
