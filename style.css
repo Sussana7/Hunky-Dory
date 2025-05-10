@@ -17,9 +17,9 @@ body {
 
 /****** HEADER ******/
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 1000; */
   display: flex;
   flex-direction: column;
   background-color: #e7e4e2;
