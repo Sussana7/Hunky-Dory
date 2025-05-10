@@ -9,3 +9,11 @@ font author site: http://pedroreina.net/apostrophiclab/
 
 {"bg":"#FDF7EC","icon-gradient-0":"#E56500","icon-gradient-1":"#EBC51D","font":"#342103","slogan":"#483517"}
       
+Additions
+1. I added the section-menu id to the explore menu href so that it refers you to menu when it is clicked on.
+
+Fixes
+1. The order now button in the menu
+    the font size
+    the font weight
+    and the overall color and styles.

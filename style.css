@@ -197,12 +197,12 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   background-color: #e7e4e2;
 }
 
 .section-menu h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   grid-column: span 3;
   text-align: center;
   margin-top: 1rem;
@@ -231,7 +231,7 @@ body {
 .section-menu h3 {
   color: #722f37;
   padding-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .section-menu p {
@@ -248,19 +248,19 @@ body {
   color: #000;
 }
 
-.section-menu button {
+/* .section-menu button {
   padding: 0.6rem 1.2rem;
   background-color: crimson;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
+  transition: background-color 0.3s; */
+/* } */
 
-.section-menu button:hover {
-  background-color: darkred;
-}
+/* .section-menu button:hover {
+  background-color: rgb(176, 105, 6);
+} */
 
 @media (max-width: 768px) {
   .section-menu {
