@@ -465,67 +465,38 @@ body {
   padding: 2rem;
   background-color: #4d4a4a;
   font-size: 1.5rem;
+  color: #e5e2e2;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+
+.logo-container h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-description {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
 }
 
 .logo-container,
 .pages-container,
-.info-container {
-  color: #e5e2e2;
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .pages-container p {
-  margin-bottom: 3rem !important;
-}
-
-.footer p:first-child {
   font-weight: bold;
   margin-bottom: 1rem;
-}
-
-.logo-description {
-  font-size: 1.2rem;
-}
-
-.social-media-container {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.social-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: rgb(179, 41, 41);
-  padding: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-
-.social-icon img {
-  width: 100%; /* This makes the image fill the circle */
-  height: auto;
-  display: block;
-  filter: invert(1); /* Makes the icon white */
-}
-
-.social-icon:hover {
-  background-color: darkred;
-}
-
-.social-icon:active {
-  background-color: crimson; /* This makes it a darker red when clicked */
-}
-
-footer .logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; /* Ensure the text is centered */
-}
-
-footer .logo-container a {
-  margin: 0.05rem; /* Space between the icons */
 }
 
 .pages-container ul {
@@ -534,10 +505,13 @@ footer .logo-container a {
   margin: 0;
 }
 
+.contact-us h3 {
+  padding-bottom: 1rem;
+}
+
 .footer-link {
   color: #c1b8b8;
   text-decoration: none;
-  display: block;
   margin-bottom: 0.6rem;
 }
 
@@ -545,24 +519,57 @@ footer .logo-container a {
   text-decoration: underline;
 }
 
+.social-media-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  /* background-color: #ff9900; */
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: invert(1);
+}
+
+.social-icon:hover {
+  background-color: black;
+}
+
+.social-icon:active {
+  background-color: black;
+}
+
+.copyright {
+  grid-column: 1 / -1; /* Spans the grid item from the first column line to the last, 
+  effectively making it stretch across all columns in the grid */
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  color: #969191;
+}
+
 @media (max-width: 768px) {
   .footer {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 3rem;
   }
 
   .footer > div {
     margin-bottom: 2rem;
   }
-}
 
-.footer .copyright {
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  color: #969191;
-  grid-column: 1 / -1; /* This overides the footer being a grid */
+  .social-media-container {
+    justify-content: center;
+  }
 }
