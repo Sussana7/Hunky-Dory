@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -85,7 +85,7 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("Image/alex-haney-CAhjZmVk5H4-unsplash.jpg");
+    url('Image/alex-haney-CAhjZmVk5H4-unsplash.jpg');
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -200,9 +200,9 @@ body {
 /* ****************** */
 /* SECTION MENU */
 .section-menu {
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* gap: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   padding: 2rem;
   font-weight: 400;
   background-color: #e7e4e2;
