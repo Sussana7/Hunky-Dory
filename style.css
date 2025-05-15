@@ -45,7 +45,12 @@ body {
 }
 
 .logo {
-  height: 8rem;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .main-nav-list {
@@ -471,11 +476,17 @@ body {
   color: #e5e2e2;
 }
 
-.logo-container {
+/* .logo-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.3rem;
+} */
+
+.footer .logo {
+  width: 80px;
+  /* max-width: 100px; */
+  height: 50px;
 }
 
 .logo-container h3 {
@@ -486,7 +497,8 @@ body {
 .logo-description {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  color: #c1b8b8;
 }
 
 .logo-container,
@@ -556,7 +568,7 @@ body {
   grid-column: 1 / -1; /* Spans the grid item from the first column line to the last, 
   effectively making it stretch across all columns in the grid */
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-top: 2rem;
   padding-top: 1rem;
   color: #969191;
@@ -570,6 +582,10 @@ body {
 
   .footer > div {
     margin-bottom: 2rem;
+  }
+
+  .logo {
+    max-width: 100px;
   }
 
   .social-media-container {
