@@ -480,12 +480,12 @@ body {
   gap: 0.3rem;
 } */
 
-.footer .logo {
-  width: 800px;
-  /* max-height: 50px;  */
-  height: 80px;
+.footer-logo {
+  width: 180px;
+  max-height: 80px;
   object-fit: contain;
   display: block;
+  border-radius: 10px;
 }
 
 .logo-container h3 {
@@ -517,6 +517,9 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .contact-us h3 {
