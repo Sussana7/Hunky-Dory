@@ -481,8 +481,8 @@ body {
 } */
 
 .footer-logo {
-  width: 180px;
-  max-height: 80px;
+  width: 150px;
+  /* max-height: 80px; */
   object-fit: contain;
   display: block;
   border-radius: 10px;
@@ -498,6 +498,7 @@ body {
   padding: 0;
   font-size: 1.5rem;
   color: #c1b8b8;
+  flex-wrap: wrap;
 }
 
 .logo-container,
