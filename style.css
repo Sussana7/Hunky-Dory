@@ -224,10 +224,14 @@ body {
   text-align: center;
 }
 
+.img-container img {
+  height: 350px;
+}
+
 .section-menu img {
   width: 100%;
   max-width: 400px;
-  height: 200px;
+  /* height: 200px; */
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -471,8 +475,8 @@ body {
   background-color: #4d4a4a;
   font-size: 1.8rem;
   color: #e5e2e2;
+  box-sizing: border-box;
 }
-
 /* .logo-container {
   display: flex;
   flex-direction: column;
@@ -480,9 +484,15 @@ body {
   gap: 0.3rem;
 } */
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+
 .footer-logo {
   width: 150px;
-  /* max-height: 80px; */
   object-fit: contain;
   display: block;
   border-radius: 10px;
@@ -494,11 +504,12 @@ body {
 }
 
 .logo-description {
-  margin: 0;
-  padding: 0;
   font-size: 1.5rem;
   color: #c1b8b8;
-  flex-wrap: wrap;
+  text-align: justify;
+  word-break: break-word;
+  max-width: 100%;
+  line-height: 1.4;
 }
 
 .logo-container,
