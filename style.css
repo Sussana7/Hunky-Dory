@@ -469,7 +469,7 @@ body {
   gap: 2rem;
   padding: 2rem;
   background-color: #4d4a4a;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #e5e2e2;
 }
 
@@ -525,6 +525,10 @@ body {
 
 .contact-us h3 {
   padding-bottom: 1rem;
+}
+
+.contact-us {
+  gap: 0.4rem;
 }
 
 .footer-link {
