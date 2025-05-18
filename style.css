@@ -112,14 +112,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%); /* Move slightly lower to account for nav */
   text-align: center;
   color: #fff;
   padding: 1rem;
   width: 60%;
   max-width: 90%;
   line-height: 0.95;
-  /* text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); */
 }
 
 .hero-content h1 {
@@ -127,12 +126,6 @@ body {
   line-height: 1.2;
   margin-bottom: 3rem;
   font-weight: 600;
-
-  /* background: linear-gradient(to right, #feca15, #fc6c00);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block; */
 }
 
 .hero-content p {
@@ -184,6 +177,13 @@ body {
 
 /* ****************** */
 /* MEDIA QUERY FOR HEADER AND SECTION HERO */
+/* smaller desktops  */
+@media (max-width: 84em) {
+  .hero-content h1 {
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+}
 
 @media (max-width: 768px) {
   .main-navigation {
@@ -539,7 +539,7 @@ body {
 /* ****************** */
 /* FOOTER */
 .footer {
-  padding:4.8rem 2rem;
+  padding: 4.8rem 2rem;
   background-color: #4d4a4a;
   font-size: 1.8rem;
   color: #e5e2e2;
