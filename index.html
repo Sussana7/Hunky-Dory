@@ -167,29 +167,30 @@
       </section>
 
       <section class="Order-placement" id="Order-placement">
-        <form action="">
+        <form action="" id="order-form">
+          <h2>Place Your Order</h2>
           <div>
             <label for="">Choose portion size:</label>
-            <select required>
-              <option value="">Small</option>
-              <option value="">Medium</option>
-              <option value="">Large</option>
+            <select required id="portion">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
             </select>
           </div>
 
           <div>
             <label for="">Enter your name:</label>
-            <input type="text" required />
+            <input type="text" required id="name" />
           </div>
 
           <div>
             <label for="">Enter your phone number:</label>
-            <input type="text" required />
+            <input type="text" required id="phone-number" />
           </div>
 
           <div>
             <label for="">Enter your delivery address:</label>
-            <input type="text" required />
+            <input type="text" required id="address" />
           </div>
 
           <button class="button-link">Order Now</button>
@@ -288,36 +289,12 @@
           </div>
         </div>
 
-        <!-- <div class="utility-pages-container">
-        <p>Utility Pages</p>
-        <ul>
-          <li><a class="footer-link" href="#">Start Here</a></li>
-          <li><a class="footer-link" href="#">Styleguide</a></li>
-          <li><a class="footer-link" href="#">Password Protected</a></li>
-          <li><a class="footer-link" href="#">404 Not Found</a></li>
-          <li><a class="footer-link" href="#">Licenses</a></li>
-          <li><a class="footer-link" href="#">Changelog</a></li>
-          <li><a class="footer-link" href="#">View more</a></li>
-        </ul>
-      </div> -->
-
-        <!-- <div class="sample-foods-container">
-        <p>Follow Us On Instagram</p>
-        <div class="sample-foods">
-          <img src="Image/pexels-steve-3789885 1.png" alt="Mac and cheese" />
-          <img
-            src="Image/sadj-iron-pot-with-various-salads 1.png"
-            alt="Salads"
-          />
-          <img src="Image/pexels-ash-376464 1.png" alt="waffle" />
-        </div>
-      </div> -->
-
         <div class="copyright">
           <p>Copyright &copy;2025 Hunky Dory. All rights reserved.</p>
           <p>Made with ❤️ by Sussana Teye</p>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

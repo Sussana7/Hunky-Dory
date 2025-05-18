@@ -13,6 +13,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  color: #333;
   font-style: normal;
 }
 .container {
@@ -186,6 +187,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .section-hero {
+    height: 60vh;
+  }
+
   .main-navigation {
     flex-direction: column;
     height: auto;
@@ -200,30 +205,35 @@ body {
     margin-top: 1rem;
   }
 
-  .main-nav-link,
-  .button-link {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
+  .main-nav-link {
+    /* font-size: 2rem;
+    padding: 0.6rem 1.2rem; */
+    display: none;
+  }
+  .main-navigation .button-link {
+    display: none;
   }
 
   .hero-content {
     width: 90%;
+    top: 40%; /* was 50% */
+    transform: translate(-50%, -40%); /* move up slightly */
     padding: 0.5rem;
   }
 
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 3.8rem;
     margin-bottom: 1rem;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   .btn {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
+    font-size: 2rem;
+    padding: 0.8rem 1rem;
   }
 }
 
@@ -333,7 +343,7 @@ body {
 } */
 
 @media (max-width: 768px) {
-  .section-menu {
+  .menu-container {
     grid-template-columns: 1fr;
   }
 
@@ -432,7 +442,7 @@ body {
 /* MEDIA QUERY FOR SECTION TESTIMONIALS */
 
 @media (max-width: 768px) {
-  .section-testimonials {
+  .testimonials-container {
     grid-template-columns: 1fr;
   }
 
@@ -459,11 +469,11 @@ body {
   }
 
   .testimonial-name {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .testimonial-location {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -681,6 +691,7 @@ body {
 
   .logo {
     max-width: 100px;
+    margin: 0 auto;
   }
 
   .social-media-container {
