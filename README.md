@@ -1,4 +1,4 @@
-# Hunky-Dory 🍔
+# Hunky-Dory 🍚
 
 **Hunky-Dory** is a responsive food ordering website built with HTML, CSS, and JavaScript. It allows users to explore a menu, view images, read customer reviews, and place food orders — all from a sleek and user-friendly interface.
 
