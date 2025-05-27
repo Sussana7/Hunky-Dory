@@ -129,8 +129,14 @@ body {
   font-weight: 600;
 }
 
-.hero-content p {
+.hero-content h2 {
   font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 3rem;
 }
@@ -478,6 +484,45 @@ body {
     font-size: 1.6rem;
   }
 }
+
+/* ****************** */
+/* SECTION GALLERY */
+
+.gallery-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 4.8rem 0;
+  font-weight: 400;
+}
+
+.gallery-container h1 {
+  font-size: 3.8rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: #333;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.img-container,
+.img-one, .img-two, .img-three, .img-four {
+  margin: 0;
+  padding: 0;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
 
 /* ****************** */
 /* SECTION ORDER PLACEMENT */
