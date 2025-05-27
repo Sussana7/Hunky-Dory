@@ -267,7 +267,9 @@ body {
 
 .menu-item-one,
 .menu-item-two,
-.menu-item-three {
+.menu-item-three,
+.menu-item-four,
+.menu-item-five {
   background: #fff;
   padding: 1rem;
   border-radius: 12px;
