@@ -129,14 +129,9 @@ body {
   font-weight: 600;
 }
 
-.hero-content h2 {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-}
 
 .hero-content p {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 3rem;
 }
@@ -187,7 +182,7 @@ body {
 /* smaller desktops  */
 @media (max-width: 84em) {
   .hero-content h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 1.2;
   }
 }
@@ -456,6 +451,7 @@ body {
 
   .section-testimonials h1 {
     grid-column: span 1;
+    font-size: 4rem;
   }
 
   .testimonial-one-img,
