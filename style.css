@@ -51,7 +51,7 @@ body {
   height: auto;
   display: block;
   object-fit: contain;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .main-nav-list {
@@ -86,6 +86,7 @@ body {
   cursor: pointer;
   border: none;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .button-link:hover {
@@ -191,6 +192,12 @@ body {
 
 @media (max-width: 768px) {
 
+  .logo{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+
   .section-hero {
     height: 70vh;
   }
@@ -237,7 +244,7 @@ body {
 
   .btn {
     font-size: 2rem;
-    /* padding: 2.4rem 1rem; */
+    padding: 1.6rem 1.8rem;
   }
 }
 
