@@ -21,7 +21,7 @@ function handleSubmit(e) {
 
   const encodedMessage = encodeURIComponent(message);
 
-  const businessNumber = '233540396394';
+  const businessNumber = '233599063577';
 
   const whatsappURL = `https://wa.me/${businessNumber}?text=${encodedMessage}`;
 
