@@ -192,12 +192,6 @@ body {
 
 @media (max-width: 768px) {
 
-  .logo{
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-  }
-
   .section-hero {
     height: 70vh;
   }
@@ -768,7 +762,7 @@ body {
   }
 
   .logo {
-    max-width: 100px;
+    max-width: 200px;
     margin: 0 auto;
   }
 
