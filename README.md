@@ -27,16 +27,16 @@
 
 ## 📁 Project Structure
 Hunky-Dory/
-├── .vscode/ # VS Code config
-├── Design/ # Design-related files
-├── Image/ # Project images and logo
-│ └── screenshot.png # Screenshot of the site
+├── .vscode/ 
+├── Design/ 
+├── Image/
+│ └── screenshot.png 
 ├── index.html # Main webpage
-├── style.css # Styling for the site
-├── script.js # JavaScript for interactivity
-├── comments-1.txt # Customer reviews (set 1)
-├── comments-2.txt # Customer reviews (set 2)
-└── README.md # This file
+├── style.css 
+├── script.js 
+├── comments-1.txt
+├── comments-2.txt 
+└── README.md 
 
 
 ## 👩🏾‍💻 Contributors
